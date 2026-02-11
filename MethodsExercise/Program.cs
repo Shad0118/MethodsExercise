@@ -4,26 +4,30 @@
     {
         static void Main(string[] args)
         {
-            StoryTeller();
-            
+            Console.WriteLine(Addition(8, 7));//15
+            Console.WriteLine(Subtraction(100,45));// 55
+            Console.WriteLine(Multiplication(5,8));// 40
+            Console.WriteLine(Division(8, 2));    // 4
         }
 
-        public static void StoryTeller()
+        public static int Addition(int a, int b)
         {
-            Console.WriteLine("What is your name ?");
-            string name = Console.ReadLine();
-            
-            Console.WriteLine("What is your favourite color ?");
-            string color = Console.ReadLine();
-            
-            Console.WriteLine("Name one favourite music band or artist of yours ");
-            string music = Console.ReadLine();
-            
-            Console.WriteLine("What is your favourite restaurant ?");
-            string rest = Console.ReadLine();
-            
-            Console.WriteLine($"{name} sits at {rest} dressed in {color}, relaxed and composed.\n{music}plays through headphones while a warm meal is enjoyed.Music, style, and flavor come together in a perfectly balanced moment.");
-            
+            return a + b;
+        }
+
+        public static int Subtraction(int a, int b)
+        {
+            return a - b;
+        }
+
+        public static int Multiplication(int a, int b)
+        {
+            return a * b;
+        }
+
+        public static double Division(double a, double b)
+        {
+            return a / b;
         }
     }
 }
